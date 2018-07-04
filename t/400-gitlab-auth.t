@@ -1,11 +1,9 @@
 #!/usr/bin/env perl
-
 use strict;
 use warnings;
+use lib qw(t/lib);
+use Test::Docker::Registry;
 
-use Test::More;
-use Test::Exception;
-use Sub::Override;
 use HTTP::Request;
 
 use Docker::Registry::Auth::Gitlab;
